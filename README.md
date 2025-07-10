@@ -127,3 +127,117 @@ npm install
 npm run dev:all  # Starts both backend and frontend
 ```
 
+### **🐳 Docker Deployment**
+
+```bash
+# Set environment
+export GEMINI_API_KEY="your_api_key_here"
+
+# Deploy with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+```
+
+---
+
+## 📁 **Project Structure**
+
+```
+ultra-low-latency-voice-agent/
+├── 🔧 backend/
+│   ├── app/
+│   │   ├── main.py              # FastAPI application
+│   │   ├── voice_agent.py       # Pipecat + Gemini integration
+│   │   ├── form_tools.py        # Voice-controlled form management
+│   │   └── config.py            # Configuration management
+│   ├── requirements.txt         # Python dependencies
+│   └── Dockerfile              # Backend containerization
+├── 🎨 frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── VoiceAgent.tsx   # Main voice interface
+│   │   │   ├── FormComponent.tsx # Real-time form display
+│   │   │   └── AudioVisualizer.tsx # Audio activity visualization
+│   │   ├── lib/
+│   │   │   └── rtvi-client.ts   # WebSocket client
+│   │   └── pages/
+│   │       └── index.tsx        # Main application page
+│   ├── package.json            # Frontend dependencies
+│   └── Dockerfile             # Frontend containerization
+├── 📊 performance-test.py      # Automated performance testing
+├── 🐳 docker-compose.yml      # Multi-service deployment
+└── 📖 README.md               # This documentation
+```
+
+---
+
+## 🎯 **Voice Commands Reference**
+
+### **🆕 Form Creation**
+```bash
+"I want to fill a form"     # Primary command
+"Open a form"               # Alternative
+"Create a new form"         # Alternative
+"Start a form"              # Alternative
+```
+
+### **👤 Name Field Updates**
+```bash
+"My name is John Smith"              # Standard format
+"Call me John"                       # Casual format
+"Update my name to Sarah"            # Update format
+"My new name is Alexander"           # New format
+"My name should be updated to Tom"   # Formal format
+```
+
+### **📧 Email Field Updates**
+```bash
+"My email is john@example.com"                    # Standard
+"Update my email to sarah@company.com"            # Update
+"My new email is info@business.com"               # New
+"My email should be updated to contact@firm.com"  # Formal
+"Email address is support@help.com"               # Alternative
+```
+
+### **📞 Phone Field Updates**
+```bash
+"My number is 555-1234"                          # Standard
+"Phone number is 123-456-7890"                   # Alternative
+"Update my phone to 555-9999"                    # Update
+"My new number is 888-777-6666"                  # New
+"My phone should be updated to 555-0000"         # Formal
+"Call me at 123-456-7890"                        # Natural
+```
+
+### **💬 Message Field Updates**
+```bash
+"My message is hello world"                      # Standard
+"Messages please call back"                      # Alternative
+"Update my message to urgent request"            # Update
+"My new message is contact me soon"              # New
+"My message should be updated to important"      # Formal
+"Add message this is a test"                     # Add format
+```
+
+### **✅ Form Submission**
+```bash
+"Submit the form"          # Primary
+"Send the form"            # Alternative
+"Complete the form"        # Alternative
+"Finish the form"          # Alternative
+"Done"                     # Casual
+```
+
+### **🔄 Form Management**
+```bash
+"Reset the form"           # Clear all fields
+"Start over"               # Reset alternative
+"Clear the form"           # Clear alternative
+"New form"                 # Create new
+"Help"                     # Show commands
+```
+
+---
+
