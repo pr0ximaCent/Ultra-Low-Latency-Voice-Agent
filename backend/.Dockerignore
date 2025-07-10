@@ -1,0 +1,254 @@
+# Backend .dockerignore for FastAPI Voice Agent
+# Place this file in: backend/.dockerignore
+
+# =============================================================================
+# 🚫 DEVELOPMENT FILES
+# =============================================================================
+# Git
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# 🐍 PYTHON DEVELOPMENT
+# =============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+test-results/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# 🔐 SECRETS & ENVIRONMENT
+# =============================================================================
+# Environment files (keep .env.example)
+.env*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Configuration overrides
+config.local.*
+settings.local.*
+local.json
+local.yml
+local.yaml
+
+# =============================================================================
+# 📊 LOGS & MONITORING
+# =============================================================================
+# Log files
+*.log
+*.out
+*.err
+logs/
+log/
+
+# Performance data
+performance_results.json
+performance_*.json
+benchmark_*.json
+monitoring/
+metrics/
+traces/
+
+# =============================================================================
+# 🗃️ DATABASES & DATA
+# =============================================================================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Data directories
+data/
+database/
+db/
+dumps/
+
+# Cache files
+.cache/
+cache/
+.temp/
+tmp/
+
+# =============================================================================
+# 📦 PACKAGE MANAGEMENT
+# =============================================================================
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+poetry.lock
+.poetry/
+
+# =============================================================================
+# 🎵 AUDIO & MEDIA
+# =============================================================================
+# Large audio files
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.flv
+*.webm
+*.ogg
+*.m4a
+*.aac
+*.wma
+
+# Audio test data
+audio-samples/
+voice-samples/
+test-audio/
+
+# =============================================================================
+# 🧪 TESTING & DEVELOPMENT
+# =============================================================================
+# Test artifacts
+test-results/
+.test-output/
+coverage/
+
+# Development scripts
+scripts/dev/
+dev-tools/
+development/
+
+# =============================================================================
+# 🚀 DEPLOYMENT
+# =============================================================================
+# Docker
+docker-compose*.yml
+Dockerfile*
+!Dockerfile
+
+# Kubernetes
+*.yaml
+*.yml
+k8s/
+kubernetes/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# =============================================================================
+# 📖 DOCUMENTATION
+# =============================================================================
+# Documentation source
+docs/
+documentation/
+README.md
+*.md
+!requirements.txt
+
+# =============================================================================
+# 🔧 MISCELLANEOUS
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# 🎯 PROJECT SPECIFIC
+# =============================================================================
+# Voice Agent specific
+voice-recordings/
+audio-logs/
+speech-samples/
+form-data/
+user-sessions/
+
+# Demo materials
+demo-recordings/
+presentation-assets/
+demo-data/
+
+# Temporary uploads
+uploads/
+temp-uploads/
+user-uploads/
+
+# Generated API docs
+api-docs/
+swagger-ui/
+redoc/
