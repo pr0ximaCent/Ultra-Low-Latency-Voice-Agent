@@ -52,3 +52,28 @@ graph TB
 
 ---
 
+## 🛠️ **Technology Stack & Architecture Decisions**
+
+### **🔥 Why This Stack Achieves Ultra-Low Latency**
+
+| Component | Technology | Latency Optimization |
+|-----------|------------|---------------------|
+| **🎤 Speech Recognition** | Web Speech API | Native browser integration, no network calls |
+| **🌐 Communication** | WebSocket | Full-duplex, real-time communication |
+| **⚡ Backend Framework** | FastAPI | Async/await, high-performance Python |
+| **🤖 AI Processing** | Google Gemini Live API | Native audio processing, no transcription |
+| **🔗 Audio Pipeline** | Pipecat Framework | Optimized streaming audio pipeline |
+| **🖥️ Frontend** | Next.js + TypeScript | Server-side rendering, optimized React |
+| **📝 State Management** | React Hooks | Minimal re-renders, efficient updates |
+
+### **🎯 Performance Optimizations**
+
+- **Native Audio Streaming**: Direct microphone → Gemini Live (no STT conversion)
+- **WebSocket Architecture**: Eliminates HTTP request overhead
+- **Async Processing**: Non-blocking operations throughout the stack
+- **Optimized Pipelines**: Pipecat's streaming audio processing
+- **Minimal Serialization**: Direct JSON over WebSocket
+- **Real-time State Updates**: Instant UI updates without polling
+
+---
+
