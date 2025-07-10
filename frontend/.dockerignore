@@ -1,0 +1,287 @@
+# Frontend .dockerignore for Next.js Voice Agent
+# Place this file in: frontend/.dockerignore
+
+# =============================================================================
+# 🚫 DEVELOPMENT FILES
+# =============================================================================
+# Git
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# 📦 NODE.JS & NPM
+# =============================================================================
+# Dependencies (will be installed in container)
+node_modules/
+jspm_packages/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# =============================================================================
+# 🎨 NEXT.JS SPECIFIC
+# =============================================================================
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Next.js cache
+.next/cache/
+.cache/
+.parcel-cache/
+
+# Next.js static files (generated)
+.next/static/
+
+# =============================================================================
+# 🔧 DEVELOPMENT TOOLS
+# =============================================================================
+# Testing
+.coverage
+.coverage.*
+htmlcov/
+test-results/
+.test-output/
+.nyc_output
+coverage/
+
+# Linting
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+.tsbuildinfo
+
+# Storybook
+.out
+.storybook-out
+storybook-static/
+
+# =============================================================================
+# 🔐 SECRETS & ENVIRONMENT
+# =============================================================================
+# Environment files (keep .env.example)
+.env*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =============================================================================
+# 📊 LOGS & MONITORING
+# =============================================================================
+# Log files
+*.log
+*.out
+*.err
+logs/
+log/
+
+# Monitoring
+lighthouse-report.html
+lighthouse-report.json
+
+# =============================================================================
+# 🎵 AUDIO & MEDIA
+# =============================================================================
+# Large media files
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.flv
+*.webm
+*.ogg
+*.m4a
+*.aac
+*.wma
+
+# Media directories
+audio-samples/
+voice-samples/
+test-audio/
+media/
+assets/large/
+
+# =============================================================================
+# 🌐 WEB SPECIFIC
+# =============================================================================
+# Service worker cache
+sw.js
+workbox-*.js
+precache-manifest.*.js
+
+# PWA
+public/sw.js
+public/workbox-*.js
+
+# =============================================================================
+# 🧪 TESTING
+# =============================================================================
+# Jest
+jest.config.js
+jest.setup.js
+__tests__/
+**/*.test.js
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.js
+**/*.spec.ts
+**/*.spec.tsx
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# =============================================================================
+# 📚 DOCUMENTATION
+# =============================================================================
+# Documentation
+docs/
+documentation/
+README.md
+*.md
+!package.json
+
+# =============================================================================
+# 🚀 DEPLOYMENT
+# =============================================================================
+# Docker
+docker-compose*.yml
+Dockerfile*
+!Dockerfile
+
+# Kubernetes
+*.yaml
+*.yml
+k8s/
+kubernetes/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# =============================================================================
+# 🔧 MISCELLANEOUS
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =============================================================================
+# 🎯 PROJECT SPECIFIC
+# =============================================================================
+# Voice Agent specific
+voice-recordings/
+audio-logs/
+speech-samples/
+user-sessions/
+
+# Demo materials
+demo-recordings/
+presentation-assets/
+demo-data/
+
+# Generated files
+generated/
+auto-generated/
+.generated/
+
+# Cache directories
+.cache/
+cache/
+
+# =============================================================================
+# 📱 MOBILE (if applicable)
+# =============================================================================
+# React Native
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# =============================================================================
+# 🔍 OPTIONAL INCLUSIONS
+# =============================================================================
+# Keep essential files
+!public/
+!src/
+!package.json
+!next.config.js
+!tailwind.config.js
+!postcss.config.js
+!tsconfig.json
