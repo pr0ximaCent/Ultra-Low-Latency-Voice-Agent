@@ -304,3 +304,89 @@ class Config:
 ```
 
 ---
+
+## 🧪 **Testing**
+
+### **🔍 Manual Testing Protocol**
+
+1. **Connection Test**
+   ```bash
+   # Start services
+   docker-compose up -d
+   
+   # Test health
+   curl http://localhost:8000/health
+   # Expected: {"status": "healthy"}
+   ```
+
+2. **Voice Command Test**
+   ```bash
+   # Open http://localhost:3000
+   # Click "Connect"
+   # Say: "I want to fill a form"
+   # Verify: Form appears instantly
+   ```
+
+3. **Latency Test**
+   ```bash
+   # Monitor console for timestamps
+   # Measure: Speech end → UI update
+   # Target: <500ms
+   ```
+
+### **🤖 Automated Testing**
+
+```bash
+# Performance testing
+python performance-test.py
+
+# Load testing
+python load-test.py --connections 100 --duration 60s
+
+# Integration testing
+pytest tests/ -v
+```
+
+---
+
+## 🚀 **Deployment**
+
+### **🐳 Docker Production Deployment**
+
+```bash
+# Production build
+docker-compose -f docker-compose.prod.yml up -d
+
+# Scale services
+docker-compose up --scale backend=3 --scale frontend=2
+
+# Monitor performance
+docker-compose logs -f --tail=100
+```
+
+### **☁️ Cloud Deployment**
+
+```bash
+# AWS/GCP/Azure
+# 1. Push to container registry
+# 2. Deploy with load balancer
+# 3. Configure auto-scaling
+# 4. Set up monitoring
+```
+
+---
+
+## 📊 **Monitoring & Analytics**
+
+### **📈 Performance Metrics**
+
+```python
+# Real-time monitoring
+GET /metrics
+{
+  "latency": {"avg": 89, "p95": 145, "p99": 203},
+  "throughput": {"rps": 150, "concurrent": 45},
+  "errors": {"rate": 0.01, "total": 12}
+}
+```
+
