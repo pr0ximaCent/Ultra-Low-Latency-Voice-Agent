@@ -482,3 +482,80 @@ git push origin feature/amazing-enhancement
 - **🚀 Innovation**: Native audio streaming implementation
 - **💡 User Experience**: Natural conversation interface
 
+---
+
+## 📞 **Support**
+
+### **🆘 Getting Help**
+
+- **📖 Documentation**: Comprehensive guides included
+- **🐛 Issues**: GitHub Issues for bug reports
+- **💬 Discussions**: Community support
+- **📧 Contact**: Direct support available
+
+### **🔧 Troubleshooting**
+
+<details>
+<summary><strong>Common Issues & Solutions</strong></summary>
+
+**Connection Issues**
+```bash
+# Check API key
+echo $GEMINI_API_KEY
+
+# Verify services
+docker-compose ps
+
+# Check logs
+docker-compose logs backend
+```
+
+**Audio Issues**
+```bash
+# Chrome required for Web Speech API
+# Grant microphone permissions
+# Check audio device settings
+```
+
+**Performance Issues**
+```bash
+# Monitor latency
+# Check network connection
+# Verify system resources
+```
+
+</details>
+
+---
+
+## 📜 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 **Acknowledgments**
+
+- **Google Gemini Team** for the powerful Live API
+- **Pipecat Framework** for streamlined audio processing
+- **FastAPI Community** for excellent async framework
+- **Next.js Team** for outstanding React framework
+- **Open Source Community** for inspiration and support
+
+---
+
+<div align="center">
+  <h3>🚀 Ready to Experience Ultra-Low Latency Voice AI? 🚀</h3>
+  <p><strong>Star ⭐ this repo if you found it useful!</strong></p>
+  
+  <a href="#quick-start">Get Started</a> •
+  <a href="#performance-benchmarks">View Benchmarks</a> •
+  <a href="#contributing">Contribute</a> •
+  <a href="#support">Get Support</a>
+</div>
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ for the future of conversational AI</sub>
+</div>
