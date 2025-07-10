@@ -390,3 +390,35 @@ GET /metrics
 }
 ```
 
+### **🔍 Debugging**
+
+```bash
+# Enable debug logging
+export LOG_LEVEL=DEBUG
+
+# WebSocket debugging
+# Open browser console
+# Monitor: Connection, messages, errors
+```
+
+---
+
+## 🤝 **Contributing**
+
+### **🛠️ Development Setup**
+
+```bash
+# Fork and clone
+git clone https://github.com/yourusername/ultra-low-latency-voice-agent.git
+
+# Create feature branch
+git checkout -b feature/amazing-enhancement
+
+# Make changes and test
+python -m pytest tests/
+npm run test
+
+# Submit PR
+git push origin feature/amazing-enhancement
+```
+
